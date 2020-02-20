@@ -1,12 +1,16 @@
 // Navigation Styles here
 
 header{
+    border-bottom: 2px dashed @silver;
+
+    .navbar{
     display:flex;
     justify-content:space-between;
-    max-width: 800px;
-    width: 100%;
     margin: 0 auto;
     padding:20px 0px;
+    
+    max-width: 800px;
+    }
 
     nav{
         display:flex;
@@ -17,6 +21,10 @@ header{
             font-size: 1.6rem;
             text-decoration: none;
             color:@shark;
+        }
+
+        a:hover{
+            color:@eastern-blue;
         }
     }
 }

@@ -5,19 +5,32 @@ header{
 
     .navbar{
     display:flex;
+    flex-direction: row;
     justify-content:space-between;
     margin: 0 auto;
     padding:20px 0px;
-    
     max-width: 800px;
+
+    @media @mobile {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        margin: 0 auto;
+        padding:20px 0px;
+        max-width: 500px;
+        }
+    }
+
     }
 
     nav{
         display:flex;
         align-items: center;
-
+        @media @mobile{
+            margin-top: 15px;
+        }
         a{
-            margin-right:20px;
+            margin-right:25px;
             font-size: 1.6rem;
             text-decoration: none;
             color:@shark;
@@ -27,4 +40,3 @@ header{
             color:@eastern-blue;
         }
     }
-}

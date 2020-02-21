@@ -1,17 +1,35 @@
 // Mixins in here
 
-.bottombtns(@bg-color:@eastern-blue, @width:200px, @font-color:@shark){
-    display: block;
-    background-color: @bg-color;
-    margin: 0 10px 20px;
+.bottomnav(){
+    background-color:@eastern-blue;
     cursor: pointer;
-    width: @width;
+    width:200px;
     height: 45px;
     font-size: 2rem;
-    border-radius: 10px;
-    color:@font-color;
-    
+    border-radius: 15px;
+    border-style: none;
+    color:@white;
+
     &:hover{
-      background-color:@font-color;
-      color:@bg-color;
+        background-color:@white;
+        color:@eastern-blue;
+        border:2px solid @eastern-blue;
     }
+}
+
+.bottomnav2(){
+    background-color:@eastern-blue;
+    cursor: pointer;
+    width:100%;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 15px;
+    border-style: none;
+    color:@white;
+
+    &:hover{
+        background-color:@white;
+        color:@eastern-blue;
+        border:2px solid @eastern-blue;
+    }
+}
